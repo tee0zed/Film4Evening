@@ -10,7 +10,8 @@ class FilmLib
   def self.from_dir(path)
     films =
     Dir.glob(path).map do |film|
-      Film.new(*File.readlines(film, chomp: true))
+      args[:title], args[:year], args[:director] = *File.readlines(film, chomp: true)
+      Film.new(args)
     end
     new(films)
   end
