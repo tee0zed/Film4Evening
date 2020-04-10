@@ -2,13 +2,13 @@
 Helps to choose which film to watch by director's name.
 Library of films loads from kinopoisk.ru
 
-##Usage 
+## Usage 
 
 `main.rb`
 
-###Load options
+### Load options
 
-####From dir
+#### From dir
 Script also supports loading from `data` folder, where files contains info in this order:
 
 - title
